@@ -21,6 +21,12 @@
 
             </div>
         </div>
+        <div class="typing-field">
+            <div class="input-data">
+                <input type="text" placeholder="Type something here...">
+                <button>send</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

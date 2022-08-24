@@ -5,3 +5,103 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+.wrapper{
+    width: 370px;
+    background: #fff ;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+     border-top: 0px;
+}
+.wrapper .title{
+    background-color: rgb(185, 44, 150);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px 5px 0 0 ;
+
+}
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow: auto; /*show up scrollbar when contents are overflow*/
+}
+ 
+.wrapper .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    
+}
+.wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    background: rgb(185, 44, 150);
+/*the both properties below place the icon in center of background*/
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+}
+.wrapper .form .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 10px;
+}
+ .form .inbox .msg-header p{
+    background:  rgb(204, 230, 240);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+.wrapper .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: whitesmoke;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px ;
+}
+.wrapper .typing-field .input-data{
+    height: 40px;
+    width: 335px;
+     position: relative;
+}
+.wrapper .typing-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline:none; /*remove the line around the input section */
+    border: 1px solid transparent; 
+    padding: 0 80px 0 25px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.typing-field .input-data input:focus{
+    border-color: rgba(0,123,255,0.8);
+}
+.wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px; 
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    background: rgb(185, 44, 150);
+    border: 1px solid rgb(185, 44, 150);;
+    transform: translateY(-50%); 
+    cursor: pointer;
+}
